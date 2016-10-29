@@ -630,6 +630,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $district = $_POST["district"];
   $datecompleted = $_POST["datecompleted"];
   $estimated_population = $_POST["estimated_population"];
+
   $a1 = $_POST["A1"];
   $a1textarea = $_POST["A1textarea"];
   $a2 = $_POST["A2"];
@@ -641,6 +642,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $a5 = $_POST["A5"];
   $a5textarea = $_POST["A5textarea"];
   $a_count = $_POST["inputA"];
+
+  $b6 = $_POST["B6"];
+  $b6textarea = $_POST["B6textarea"];
+  $b7 = $_POST["B7"];
+  $b7textarea = $_POST["B7textarea"];
+  $b8 = $_POST["B8"];
+  $b8textarea = $_POST["B8textarea"];
+  $b9 = $_POST["B9"];
+  $b9textarea = $_POST["B9textarea"];
+  $b10 = $_POST["B10"];
+  $b10textarea = $_POST["B10textarea"];
+  $b11 = $_POST["B11"];
+  $b11textarea = $_POST["B11textarea"];
+  $b12 = $_POST["B12"];
+  $b12textarea = $_POST["B12textarea"];
+  $b_count = $_POST["inputB"];
   
   $dataInput = json_encode(array("Organization"=>$organization,"Settlement"=>$settlement, 
   "District"=>$district,"DateCompleted"=>$datecompleted ,
