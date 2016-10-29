@@ -9,6 +9,43 @@
   <link rel="stylesheet" href="./static/css/custom/yeti-bootstrap.css" media="screen">
   <link rel="stylesheet" href="./static/css/custom/yeti-custom.min.css">
 
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.0/themes/smoothness/jquery-ui.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
+  <script src="https://bootswatch.com/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      var prev;
+      var curr;
+      var section;
+      var count;
+      var radio;
+
+      $('input[type=radio]').mouseup(function() {
+        section = $(this).attr('name');
+        prev = false;
+        curr = false;
+        radio = 'input[name='+section+']:checked';
+        if ($(radio).val() == 'completely true' || $(radio).val() == 'all residents') {
+            prev = true;
+        }
+      }).change(function(){
+        if ($(radio).val() == 'completely true' || $(radio).val() == 'all residents') {
+            curr = true;
+        }
+        count = $(this).closest('fieldset').find('#input'+section.charAt(0));
+        if (curr && !prev){
+          count.val(parseInt(count.val())+1);
+        }else if (!curr && prev){
+          count.val(parseInt(count.val())-1);
+        }
+      });
+
+    });
+    
+  </script>
+
 </head>
 <body>
   <div class="navbar navbar-default navbar-fixed-top">
@@ -146,7 +183,7 @@
                   </div>
                   <div class="form-group" style="display:table;margin:auto;">
                     <label for="inputA">Number of Section A benchmarks rated “Completely True”:</label>
-                    <input type"text" id="inputA" name="inputA" style="margin-left:10px; border:none; background:none;" value="0"></input>
+                    <input type"text" id="inputA" name="inputA" style="margin-left:10px; border:none; background:none;" value="0" readonly></input>
                   </div>
                 </fieldset>
                 <br/>
@@ -223,8 +260,8 @@
                     </div>
                   </div>
                   <div class="form-group" style="display:table;margin:auto;">
-                    <label>Number of Section B benchmarks rated “All Residents”:</label>
-                    <input id="inputB" name="inputB" style="margin-left:10px; border:none; background:none;" value="0" readonly></input>
+                    <label for="inputB">Number of Section B benchmarks rated “All Residents”:</label>
+                    <input type"text" id="inputB" name="inputB" style="margin-left:10px; border:none; background:none;" value="0" readonly></input>
                   </div>
                 </fieldset>
                 <br />
@@ -284,7 +321,7 @@
                   </div>
                   <div class="form-group" style="display:table;margin:auto;">
                     <label>Number of Section C benchmarks rated “All Residents”:</label>
-                    <input id="inputC" name="inputC" style="margin-left:10px; border:none; background:none;" value="0" readonly></input>
+                    <input type"text" id="inputC" name="inputC" style="margin-left:10px; border:none; background:none;" value="0" readonly></input>
                   </div>
                 </fieldset>
                 <br />
@@ -353,7 +390,7 @@
                   </div>
                   <div class="form-group" style="display:table;margin:auto;">
                     <label>Number of Section D benchmarks rated “All Residents”:</label>
-                    <input id="inputD" name="inputD" style="margin-left:10px; border:none; background:none;" value="0" readonly></input>
+                    <input type"text" id="inputD" name="inputD" style="margin-left:10px; border:none; background:none;" value="0" readonly></input>
                   </div>
                 </fieldset>
                 <br />
@@ -423,7 +460,7 @@
                     </div>
                     <div class="form-group" style="display:table;margin:auto;">
                       <label>Number of Section E benchmarks rated “All Survivors”:</label>
-                      <input id="inputE" name="inputE" style="margin-left:10px; border:none; background:none;" value="0" readonly></input>
+                      <input type"text" id="inputE" name="inputE" style="margin-left:10px; border:none; background:none;" value="0" readonly></input>
                     </div>
                   </fieldset>
                   <br />
@@ -520,7 +557,7 @@
                       </div>
                       <div class="form-group" style="display:table;margin:auto;">
                         <label>Number of Section F benchmarks rated “Completely True”:</label>
-                        <input id="inputF" name="inputF" style="margin-left:10px; border:none; background:none;" value="0" readonly></input>
+                        <input type"text" id="inputF" name="inputF" style="margin-left:10px; border:none; background:none;" value="0" readonly></input>
                       </div>
                     </fieldset>
                     <br />
@@ -598,7 +635,7 @@
                       </div>
                       <div class="form-group" style="display:table;margin:auto;">
                         <label>Number of Section G benchmarks rated “Completely True”:</label>
-                        <input id="inputG" name="inputG" style="margin-left:10px; border:none; background:none;" value="0" readonly></input>
+                        <input type"text" id="inputG" name="inputG" style="margin-left:10px; border:none; background:none;" value="0" readonly></input>
                       </div>
                     </fieldset>
                     <br />
@@ -607,38 +644,38 @@
                       <div class="col-lg-3">
                         <div class="form-group" style="margin:0px">
                           <label class="col-lg-6">Section A score:</label>
-                          <label id="inputA">0</label>
+                          <label id="inputA" style="vertical-align:top">0</label>
                         </div>
                         <div class="form-group" style="margin:0px">
                           <label class="col-lg-6">Section B score:</label>
-                          <label id="inputB">0</label>
+                          <label id="inputB" style="vertical-align:top">0</label>
                         </div>
                         <div class="form-group" style="margin:0px">
                           <label class="col-lg-6">Section C score:</label>
-                          <label id="inputC">0</label>
+                          <label id="inputC" style="vertical-align:top">0</label>
                         </div>
                         <div class="form-group" style="margin:0px">
                           <label class="col-lg-6">Section D score:</label>
-                          <label id="inputD">0</label>
+                          <label id="inputD" style="vertical-align:top">0</label>
                         </div>
                         <div class="form-group" style="margin:0px">
                           <label class="col-lg-6">Section E score:</label>
-                          <label id="inputE">0</label>
+                          <label id="inputE" style="vertical-align:top">0</label>
                         </div>
                         <div class="form-group" style="margin:0px">
                           <label class="col-lg-6">Section F score:</label>
-                          <label id="inputF">0</label>
+                          <label id="inputF" style="vertical-align:top">0</label>
                         </div>
                         <div class="form-group" style="margin:0px">
                           <label class="col-lg-6">Section G score:</label>
-                          <label id="inputG">0</label>
+                          <label id="inputG" style="vertical-align:top">0</label>
                         </div>
                         <div class="form-group" style="margin:0px">
                           <hr class="col-lg-6"/>
                         </div>
                         <div class="form-group" style="margin:0px">
                           <label class="col-lg-6" style="margin-top:5px">Total:</label>
-                          <input id="total" name="total" style="border:none; background:none; width:10%; vertical-align:text-top;" value="0" readonly></input>
+                          <input id="total" name="total" style="border:none; background:none; width:10%;" value="0" readonly></input>
                         </div>
                       </div>
                       <div class="col-lg-3">
@@ -696,8 +733,8 @@
 
 
           <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-          <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-          <script src="../assets/js/custom.js"></script>
+          <script src="./static/js/bootstrap.min.js"></script>
+          <script src="./static/js/custom.js"></script>
           <script type="text/javascript">/* <![CDATA[ */(function(d,s,a,i,j,r,l,m,t){try{l=d.getElementsByTagName('a');t=d.createElement('textarea');for(i=0;l.length-i;i++){try{a=l[i].href;s=a.indexOf('/cdn-cgi/l/email-protection');m=a.length;if(a&&s>-1&&m>28){j=28+s;s='';if(j<m){r='0x'+a.substr(j,2)|0;for(j+=2;j<m&&a.charAt(j)!='X';j+=2)s+='%'+('0'+('0x'+a.substr(j,2)^r).toString(16)).slice(-2);j++;s=decodeURIComponent(s)+a.substr(j,m-j)}t.innerHTML=s.replace(/</g,'&lt;').replace(/>/g,'&gt;');l[i].href='mailto:'+t.value}}catch(e){}}}catch(e){}})(document);/* ]]> */</script></body>
           </html>
 
