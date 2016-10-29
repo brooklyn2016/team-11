@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Bootswatch: Yeti</title>
+  <title>Free The Slaves</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <link rel="stylesheet" href="./static/css/custom/yeti-bootstrap.css" media="screen">
@@ -77,7 +77,9 @@ $('#cancel').click(function(){
   $('#mature').text("Starting up");
   $('#inputmature').val("Starting up");
   $('#scores').find('.form-group').each(function(){
-    $(this).find('label').last().text('0');
+    if ($(this).find('label').last().text() != "Total:"){
+      $(this).find('label').last().text('0');
+    }
   });
 });
 
@@ -119,7 +121,7 @@ $('#save').mousedown(function(event){
   <div class="navbar navbar-default navbar-fixed-top">
     <div class="container">
       <div class="navbar-header">
-        <a href="#" class="navbar-brand">FreeTheSlaves</a>
+        <a href="../form.php" class="navbar-brand">FreeTheSlaves</a>
         <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
@@ -134,7 +136,7 @@ $('#save').mousedown(function(event){
         </ul>
 
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#" target="_blank">Logout</a></li>
+          <li><a href="../logout.php" target="_blank">Logout</a></li>
         </ul>
 
       </div>
@@ -804,6 +806,11 @@ $('#save').mousedown(function(event){
 
 
           <?php
+          session_start();
+          if(!isset($_SESSION["login_user"])) {
+            echo '<script type="text/javascript"> window.open("login.php","_self");</script>';
+          }
+
           if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $organization = $_POST["organization"];
             $settlement = $_POST["settlement"];
