@@ -15,67 +15,104 @@
   <script src="https://bootswatch.com/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
   <script>
-    $(document).ready(function(){
-      var prev;
-      var curr;
-      var section;
-      var count;
-      var radio;
-      var id;
-      var total;
-      var totalcount;
+  $(document).ready(function(){
+    var prev;
+    var curr;
+    var section;
+    var count;
+    var radio;
+    var id;
+    var total;
+    var totalcount;
 
-      $('input[type=radio]').mouseup(function() {
-        section = $(this).attr('name');
-        prev = false;
-        curr = false;
-        radio = 'input[name='+section+']:checked';
-        if ($(radio).val() == 'completely true' || $(radio).val() == 'all residents') {
-            prev = true;
-        }
-      }).change(function(){
-        if ($(radio).val() == 'completely true' || $(radio).val() == 'all residents') {
-            curr = true;
-        }
-        id = '#input'+section.charAt(0);
-        count = $(this).closest('fieldset').find(id);
-        total = $(this).closest('form').find('#scores').find('#total').val();
-        if (curr && !prev){
-          count.val(parseInt(count.val())+1);
-          totalcount = parseInt(total)+1;
-          $(this).closest('form').find('#scores').find('#total').val(totalcount);
-        }else if (!curr && prev){
-          count.val(parseInt(count.val())-1);
-          totalcount = parseInt(total)-1;
-          $(this).closest('form').find('#scores').find('#total').val(totalcount);
-        }
-        $(this).closest('form').find('#scores').find(id).text(count.val());
+    $('input[type=radio]').mouseup(function() {
+      section = $(this).attr('name');
+      prev = false;
+      curr = false;
+      radio = 'input[name='+section+']:checked';
+      if ($(radio).val() == 'completely true' || $(radio).val() == 'all residents') {
+        prev = true;
+      }
+    }).change(function(){
+      if ($(radio).val() == 'completely true' || $(radio).val() == 'all residents') {
+        curr = true;
+      }
+      id = '#input'+section.charAt(0);
+      count = $(this).closest('fieldset').find(id);
+      total = $(this).closest('form').find('#scores').find('#total').val();
+      if (curr && !prev){
+        count.val(parseInt(count.val())+1);
+        totalcount = parseInt(total)+1;
+        $(this).closest('form').find('#scores').find('#total').val(totalcount);
+      }else if (!curr && prev){
+        count.val(parseInt(count.val())-1);
+        totalcount = parseInt(total)-1;
+        $(this).closest('form').find('#scores').find('#total').val(totalcount);
+      }
+      $(this).closest('form').find('#scores').find(id).text(count.val());
 
 
-        var mature = $(this).closest('form').find('#mature');
-        var inputmature = $(this).closest('form').find('#input_mature');
-        if (totalcount >= 0 && totalcount <= 9){
-          mature.text("Starting up");
-          inputmature.val("Starting up");
-        }else if (totalcount >= 10 && totalcount <= 19){
-          mature.text("Developing");
-          inputmature.text("Developing");
-        }else if (totalcount >= 20 && totalcount <= 29){
-          mature.text("Strengthening");
-          inputmature.text("Strengthening");
-        }else if (totalcount >= 30 && totalcount <= 39){
-          mature.text("Well-established");
-          inputmature.text("Well-established");
-        }else if (totalcount >= 40 && totalcount <= 45){
-          mature.text("Discuss if Mature");
-          inputmature.text("Discuss if Mature");
-        }
-
-      });
+      var mature = $(this).closest('form').find('#mature');
+      var inputmature = $(this).closest('form').find('#input_mature');
+      if (totalcount >= 0 && totalcount <= 9){
+        mature.text("Starting up");
+        inputmature.val("Starting up");
+      }else if (totalcount >= 10 && totalcount <= 19){
+        mature.text("Developing");
+        inputmature.text("Developing");
+      }else if (totalcount >= 20 && totalcount <= 29){
+        mature.text("Strengthening");
+        inputmature.text("Strengthening");
+      }else if (totalcount >= 30 && totalcount <= 39){
+        mature.text("Well-established");
+        inputmature.text("Well-established");
+      }else if (totalcount >= 40 && totalcount <= 45){
+        mature.text("Discuss if Mature");
+        inputmature.text("Discuss if Mature");
+      }
 
     });
-    
-  </script>
+
+$('#cancel').click(function(){
+  $('#mature').text("Starting up");
+  $('#inputmature').val("Starting up");
+  $('#scores').find('.form-group').each(function(){
+    $(this).find('label').last().text('0');
+  });
+});
+
+$('#save').mousedown(function(event){
+  var err = false;
+
+  $('#general').find('input').each(function(){
+    if($(this).val() == ""){
+      err = true;
+    }
+  });
+
+  var sections = ['#A', '#B', '#C', '#D', '#E', '#F', '#G'];
+  sections.forEach(function(item) {
+    $(item).find('.form-group').each(function(){
+      var $this = $(this);
+      if($this[0] != $(item).find('.form-group').last()[0] && $this[0] != $(item).find('.form-group').first()[0]) {
+        var name = $(this).find('input').first().attr('name');
+        if (!$("input[name="+name+"]:checked").val()) {
+          err = true;
+        }
+      }
+    });
+  });
+  if (($('#reasons').val() == "") || ($('#plan').val() == "")){
+    err = true;
+  }
+  if (err){
+    alert("The form is incomplete.");
+    return false;
+  }
+});
+});
+
+</script>
 
 </head>
 <body>
@@ -93,9 +130,6 @@
         <ul class="nav navbar-nav">
           <li>
             <a href="../form.php">Form</a>
-          </li>
-          <li>
-            <a href="../data.php">Data</a>
           </li>
         </ul>
 
@@ -124,7 +158,7 @@
           <div class="col-lg-12">
             <div class="well bs-component">
               <form class="form-horizontal" method="POST" action="<?php $_PHP_SELF ?>">
-                <fieldset>
+                <fieldset id="general">
                   <legend>General</legend>
                   <div class="form-group">
                     <label for="inputOrganization" class="col-lg-2 control-label">Organization</label>
@@ -158,7 +192,7 @@
                   </div>
                 </fieldset>
                 <br/>
-                <fieldset>
+                <fieldset id="A">
                   <legend>A. Overall achievement: Slavery has been ended in this location</legend>
                   <div class="form-group">
                     <label class="col-lg-6"></label>
@@ -218,7 +252,7 @@
                   </div>
                 </fieldset>
                 <br/>
-                <fieldset>
+                <fieldset id="B">
                   <legend>B. Trafficking and slavery public awareness</legend>
                   <div class="form-group">
                     <label class="col-lg-6"></label>
@@ -296,7 +330,7 @@
                   </div>
                 </fieldset>
                 <br />
-                <fieldset>
+                <fieldset id="C">
                   <legend>C. Rights Education</legend>
                   <div class="form-group">
                     <label class="col-lg-6"></label>
@@ -356,7 +390,7 @@
                   </div>
                 </fieldset>
                 <br />
-                <fieldset>
+                <fieldset id="D">
                   <legend>D. Improved household welfare:</legend>
                   <div class="form-group">
                     <label class="col-lg-6"></label>
@@ -425,7 +459,7 @@
                   </div>
                 </fieldset>
                 <br />
-                <fieldset>
+                <fieldset id="E">
                   <legend>E. Reintegration of survivors: </legend>
                   <div class="form-group">
                     <label class="col-lg-6"></label>
@@ -495,7 +529,7 @@
                     </div>
                   </fieldset>
                   <br />
-                  <fieldset>
+                  <fieldset id="F">
                     <legend>F. Strong community group for collective action against slavery:</legend>
                     <div class="form-group">
                       <label class="col-lg-6"></label>
@@ -592,7 +626,7 @@
                       </div>
                     </fieldset>
                     <br />
-                    <fieldset>
+                    <fieldset id="G">
                       <legend>G. Decision making and follow-through of anti-slavery group: </legend>
                       <div class="form-group">
                         <label class="col-lg-6"></label>
@@ -750,8 +784,8 @@
                       <fieldset style="clear:both;">
                         <div class="form-group" style="text-align:center">
                           <div class="col-lg-9 col-lg-offset-2">
-                            <button type="reset" class="btn btn-default">Cancel</button>
-                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <button id="cancel" type="reset" class="btn btn-default">Cancel</button>
+                            <button id="save" type="submit" class="btn btn-primary">Submit</button>
                           </div>
                         </div>
                       </fieldset>
@@ -765,8 +799,6 @@
 
 
           <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-          <script src="./static/js/bootstrap.min.js"></script>
-          <script src="./static/js/custom.js"></script>
           <script type="text/javascript">/* <![CDATA[ */(function(d,s,a,i,j,r,l,m,t){try{l=d.getElementsByTagName('a');t=d.createElement('textarea');for(i=0;l.length-i;i++){try{a=l[i].href;s=a.indexOf('/cdn-cgi/l/email-protection');m=a.length;if(a&&s>-1&&m>28){j=28+s;s='';if(j<m){r='0x'+a.substr(j,2)|0;for(j+=2;j<m&&a.charAt(j)!='X';j+=2)s+='%'+('0'+('0x'+a.substr(j,2)^r).toString(16)).slice(-2);j++;s=decodeURIComponent(s)+a.substr(j,m-j)}t.innerHTML=s.replace(/</g,'&lt;').replace(/>/g,'&gt;');l[i].href='mailto:'+t.value}}catch(e){}}}catch(e){}})(document);/* ]]> */</script></body>
           </html>
 
@@ -887,10 +919,10 @@
             $dataInput = json_encode(array("Organization"=>$organization,"Settlement"=>$settlement, 
               "District"=>$district,"DateCompleted"=>$datecompleted ,
               "EstimatedPopulation"=>$estimated_population,
-			  "TotalScore"=>$total,
-			  "MatureRatingScale"=>$mature,
-			  "ReasonsWhyItIsMatureOrNot"=>$reasons,
-			  "ActionPlan"=>$plan,
+              "TotalScore"=>$total,
+              "MatureRatingScale"=>$mature,
+              "ReasonsWhyItIsMatureOrNot"=>$reasons,
+              "ActionPlan"=>$plan,
               "Answer1"=>$a1,"Answer1Comments"=>$a1textarea,
               "Answer2"=>$a2,"Answer2Comments"=>$a2textarea,
               "Answer3"=>$a3,"Answer3Comments"=>$a3textarea,
