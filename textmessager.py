@@ -14,19 +14,22 @@ def sms():
     maturity = int(request.values.get('Body', None))
     count = session.get('count', 0)
 
-
+    total = session.get('total', 0)
+    
     count += 1
     
     if count > 2:
         if maturity == 0:
             count = session.get('count', 0) - 2;
-            maturity = - session.get('maturity', 0)
-        total = maturity
+        elif maturity == 3:
+            total += 1
+        else:
+            total = 0
     else:
         total = 0
-
-    total += session.get('total', 0)
     
+    
+    print(maturity, " ", total)
     
     session['count'] = count
     session['maturity'] = maturity
