@@ -21,6 +21,9 @@
       var section;
       var count;
       var radio;
+      var id;
+      var total;
+      var totalcount;
 
       $('input[type=radio]').mouseup(function() {
         section = $(this).attr('name');
@@ -34,12 +37,34 @@
         if ($(radio).val() == 'completely true' || $(radio).val() == 'all residents') {
             curr = true;
         }
-        count = $(this).closest('fieldset').find('#input'+section.charAt(0));
+        id = '#input'+section.charAt(0);
+        count = $(this).closest('fieldset').find(id);
+        total = $(this).closest('form').find('#scores').find('#total').val();
         if (curr && !prev){
           count.val(parseInt(count.val())+1);
+          totalcount = parseInt(total)+1;
+          $(this).closest('form').find('#scores').find('#total').val(totalcount);
         }else if (!curr && prev){
           count.val(parseInt(count.val())-1);
+          totalcount = parseInt(total)-1;
+          $(this).closest('form').find('#scores').find('#total').val(totalcount);
         }
+        $(this).closest('form').find('#scores').find(id).text(count.val());
+
+
+        var mature = $(this).closest('form').find('#mature');
+        if (totalcount >= 0 && totalcount <= 9){
+          mature.text("Starting up");
+        }else if (totalcount >= 10 && totalcount <= 19){
+          mature.text("Developing");
+        }else if (totalcount >= 20 && totalcount <= 29){
+          mature.text("Strengthening");
+        }else if (totalcount >= 30 && totalcount <= 39){
+          mature.text("Well-established");
+        }else if (totalcount >= 40 && totalcount <= 45){
+          mature.text("Discuss if Mature");
+        }
+
       });
 
     });
@@ -641,7 +666,7 @@
                     <br />
                     <fieldset>
                       <legend>Conclusion</legend>
-                      <div class="col-lg-3">
+                      <div class="col-lg-3" id="scores">
                         <div class="form-group" style="margin:0px">
                           <label class="col-lg-6">Section A score:</label>
                           <label id="inputA" style="vertical-align:top">0</label>
