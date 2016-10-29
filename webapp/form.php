@@ -147,6 +147,215 @@
                     </div>
                   </fieldset>
                   <br />
+				  <fieldset>
+                    <legend>B. Trafficking and slavery public awareness</legend>
+                    <div class="form-group">
+                      <label class="col-lg-6"></label>
+                      <label style="padding-right: 15px; margin-left:30px">Allresidents</label>
+                      <label style="padding-right: 15px">Someresidents</label>
+                      <label style="padding-right: 15px">Noresidents</label>
+                      <label>Comments</label>
+                    </div>
+                    <div class="form-group">
+                      <label for="inputB6" class="col-lg-6" style="vertical-align:middle">Residents in this village know how to protect themselves from trafficking during migration for work. (facilitator questions: In cases where a household member is migrating for work, are they: 1) counseled about the risks? 2) told about the measures to take to protect themselves? and 3) told whomto contact if they find themselves in slavery?)</label>
+                      <div style="margin-left:30px">
+                        <input type="radio" name="B6" id="B6CT" value="Allresidents" style="vertical-align:top; margin-left:75px">
+                        <input type="radio" name="B6" id="B6PT" value="Someresidents" style="vertical-align:top; margin-left:80px">
+                        <input type="radio" name="B6" id="B6CU" value="Noresidents" style="vertical-align:top; margin-left:100px">
+                        <textarea rows="1" id="B6textarea" style="vertical-align:top; margin-left:55px"></textarea>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="inputB7" class="col-lg-6">Residents understand the risksof sending children to distant jobs, e.g. domestic work, mining or stone quarries, and circuses.  </label>
+                      <div style="margin-left:30px">
+                        <input type="radio" name="B7" id="B7CT" value="Allresidents" style="vertical-align:top; margin-left:75px">
+                        <input type="radio" name="B7" id="B7PT" value="Someresidents" style="vertical-align:top; margin-left:80px">
+                        <input type="radio" name="B7" id="B7CU" value="Noresidents" style="vertical-align:top; margin-left:100px">
+                        <textarea rows="1" id="B7textarea" style="vertical-align:top; margin-left:55px"></textarea>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="inputB8" class="col-lg-6">Residents are able to identify and pressure known traffickers to leave when they appear in the community</label>
+                      <div style="margin-left:30px">
+                        <input type="radio" name="B8" id="B8CT" value="Allresidents" style="vertical-align:top; margin-left:75px">
+                        <input type="radio" name="B8" id="B8PT" value="Someresidents" style="vertical-align:top; margin-left:80px">
+                        <input type="radio" name="B8" id="B8CU" value="Noresidents" style="vertical-align:top; margin-left:100px">
+                        <textarea rows="1" id="B8textarea" style="vertical-align:top; margin-left:55px"></textarea>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="inputB9" class="col-lg-6">Residents in this village know how to avoid debt bondage.</label>
+                      <div style="margin-left:30px">
+                        <input type="radio" name="B9" id="B9CT" value="Allresidents" style="vertical-align:top; margin-left:75px">
+                        <input type="radio" name="B9" id="B9PT" value="Someresidents" style="vertical-align:top; margin-left:80px">
+                        <input type="radio" name="B9" id="B9CU" value="Noresidents" style="vertical-align:top; margin-left:100px">
+                        <textarea rows="1" id="B9textarea" style="vertical-align:top; margin-left:55px"></textarea>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="inputB10" class="col-lg-6">Residents understand the risks of earlyor forced marriage and false offers of marriage</label>
+                      <div style="margin-left:30px">
+                        <input type="radio" name="B10" id="B10CT" value="Allresidents" style="vertical-align:top; margin-left:75px">
+                        <input type="radio" name="B10" id="B10PT" value="Someresidents" style="vertical-align:top; margin-left:80px">
+                        <input type="radio" name="B10" id="B10CU" value="Noresidents" style="vertical-align:top; margin-left:100px">
+                        <textarea rows="1" id="B10textarea" style="vertical-align:top; margin-left:55px"></textarea>
+                      </div>
+                    </div>
+					<div class="form-group">
+                      <label for="inputB11" class="col-lg-6">Residents are able to confront domestic violence.</label>
+                      <div style="margin-left:30px">
+                        <input type="radio" name="B11" id="B11CT" value="Allresidents" style="vertical-align:top; margin-left:75px">
+                        <input type="radio" name="B11" id="B11PT" value="Someresidents" style="vertical-align:top; margin-left:80px">
+                        <input type="radio" name="B11" id="B11CU" value="Noresidents" style="vertical-align:top; margin-left:100px">
+                        <textarea rows="1" id="B11textarea" style="vertical-align:top; margin-left:55px"></textarea>
+                      </div>
+                    </div>
+					<div class="form-group">
+                      <label for="inputB12" class="col-lg-6">Residents know how to file criminal complaints with the police.</label>
+                      <div style="margin-left:30px">
+                        <input type="radio" name="B12" id="B12CT" value="Allresidents" style="vertical-align:top; margin-left:75px">
+                        <input type="radio" name="B12" id="B12PT" value="Someresidents" style="vertical-align:top; margin-left:80px">
+                        <input type="radio" name="B12" id="B12CU" value="Noresidents" style="vertical-align:top; margin-left:100px">
+                        <textarea rows="1" id="B12textarea" style="vertical-align:top; margin-left:55px"></textarea>
+                      </div>
+                    </div>
+                    <div class="form-group" style="display:table;margin:auto;">
+                      <label>Number of Section B benchmarks rated “All Residents”:</label>
+                      <label id="inputB" style="margin-left:10px">0<label>
+                    </div>
+                  </fieldset>
+                  <br />
+				  <br />
+				  <fieldset>
+                    <legend>C. Rights Education</legend>
+                    <div class="form-group">
+                      <label class="col-lg-6"></label>
+                      <label style="padding-right: 15px; margin-left:30px">Allresidents</label>
+                      <label style="padding-right: 15px">Someresidents</label>
+                      <label style="padding-right: 15px">Noresidents</label>
+                      <label>Comments</label>
+                    </div>
+                    <div class="form-group">
+                      <label for="inputC13" class="col-lg-6" style="vertical-align:middle">Residents understand basic human rights. (facilitator questions: How many residents do you think know about freedom of movement? freedom to join groups and assemble? right to education?) </label>
+                      <div style="margin-left:30px">
+                        <input type="radio" name="C13" id="C13CT" value="Allresidents" style="vertical-align:top; margin-left:75px">
+                        <input type="radio" name="C13" id="C13PT" value="Someresidents" style="vertical-align:top; margin-left:80px">
+                        <input type="radio" name="C13" id="C13CU" value="Noresidents" style="vertical-align:top; margin-left:100px">
+                        <textarea rows="1" id="C13textarea" style="vertical-align:top; margin-left:55px"></textarea>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="inputC14" class="col-lg-6">Residents are able to list some of the country’s legal rights for workers. (facilitator questions: How many residents do you think know about minimum wages? The right to protection from violence and threats in the workplace? the right to prosecute traffickers? protections from child labor?)  </label>
+                      <div style="margin-left:30px">
+                        <input type="radio" name="C14" id="C14CT" value="Allresidents" style="vertical-align:top; margin-left:75px">
+                        <input type="radio" name="C14" id="C14PT" value="Someresidents" style="vertical-align:top; margin-left:80px">
+                        <input type="radio" name="C14" id="C14CU" value="Noresidents" style="vertical-align:top; margin-left:100px">
+                        <textarea rows="1" id="C14textarea" style="vertical-align:top; margin-left:55px"></textarea>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="inputC15" class="col-lg-6">Residents know it is a violation of human rights to use force, threat, or fraud to compel someone to go to a workplace or prevent someone from leaving a job.</label>
+                      <div style="margin-left:30px">
+                        <input type="radio" name="C15" id="C15CT" value="Allresidents" style="vertical-align:top; margin-left:75px">
+                        <input type="radio" name="C15" id="C15PT" value="Someresidents" style="vertical-align:top; margin-left:80px">
+                        <input type="radio" name="C15" id="C15CU" value="Noresidents" style="vertical-align:top; margin-left:100px">
+                        <textarea rows="1" id="C15textarea" style="vertical-align:top; margin-left:55px"></textarea>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="inputC16" class="col-lg-6">Residents are clearly and non-violently able to communicate their rights to officials and others in power.</label>
+                      <div style="margin-left:30px">
+                        <input type="radio" name="C16" id="C16CT" value="Allresidents" style="vertical-align:top; margin-left:75px">
+                        <input type="radio" name="C16" id="C16PT" value="Someresidents" style="vertical-align:top; margin-left:80px">
+                        <input type="radio" name="C16" id="C16CU" value="Noresidents" style="vertical-align:top; margin-left:100px">
+                        <textarea rows="1" id="C16textarea" style="vertical-align:top; margin-left:55px"></textarea>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="inputC17" class="col-lg-6">Residents know how to demand and obtain benefits to which they may be entitled from the government. (facilitator questions: How many residents do you think know how to demand birth registration? pensions? social security? basic social services such as health care and education?)</label>
+                      <div style="margin-left:30px">
+                        <input type="radio" name="C17" id="C17CT" value="Allresidents" style="vertical-align:top; margin-left:75px">
+                        <input type="radio" name="C17" id="C17PT" value="Someresidents" style="vertical-align:top; margin-left:80px">
+                        <input type="radio" name="C17" id="C17CU" value="Noresidents" style="vertical-align:top; margin-left:100px">
+                        <textarea rows="1" id="C17textarea" style="vertical-align:top; margin-left:55px"></textarea>
+                      </div>
+                    </div>
+                    <div class="form-group" style="display:table;margin:auto;">
+                      <label>Number of Section C benchmarks rated “All Residents”:</label>
+                      <label id="inputC" style="margin-left:10px">0<label>
+                    </div>
+                  </fieldset>
+                  <br />
+				  <br />
+				  <fieldset>
+                    <legend>D. Improved household welfare:</legend>
+                    <div class="form-group">
+                      <label class="col-lg-6"></label>
+                      <label style="padding-right: 15px; margin-left:30px">Allresidents</label>
+                      <label style="padding-right: 15px">Someresidents</label>
+                      <label style="padding-right: 15px">Noresidents</label>
+                      <label>Comments</label>
+                    </div>
+                    <div class="form-group">
+                      <label for="inputD18" class="col-lg-6" style="vertical-align:middle">Residents have economic stability.(facilitator questions: how many families have enough steady income to allow them to withstand unexpected financial demands (such as a family medical emergency) while continuing to eat properly, be housed and attend school? How many families have income generating projects? </label>
+                      <div style="margin-left:30px">
+                        <input type="radio" name="D18" id="D18CT" value="Allresidents" style="vertical-align:top; margin-left:75px">
+                        <input type="radio" name="D18" id="D18PT" value="Someresidents" style="vertical-align:top; margin-left:80px">
+                        <input type="radio" name="D18" id="D18CU" value="Noresidents" style="vertical-align:top; margin-left:100px">
+                        <textarea rows="1" id="D18textarea" style="vertical-align:top; margin-left:55px"></textarea>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="inputD19" class="col-lg-6">Children in this community attend school.</label>
+                      <div style="margin-left:30px">
+                        <input type="radio" name="D19" id="D19CT" value="Allresidents" style="vertical-align:top; margin-left:75px">
+                        <input type="radio" name="D19" id="D19PT" value="Someresidents" style="vertical-align:top; margin-left:80px">
+                        <input type="radio" name="D19" id="D19CU" value="Noresidents" style="vertical-align:top; margin-left:100px">
+                        <textarea rows="1" id="D19textarea" style="vertical-align:top; margin-left:55px"></textarea>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="inputD20" class="col-lg-6">Residents can obtain loans on fair terms.</label>
+                      <div style="margin-left:30px">
+                        <input type="radio" name="D20" id="D20CT" value="Allresidents" style="vertical-align:top; margin-left:75px">
+                        <input type="radio" name="D20" id="D20PT" value="Someresidents" style="vertical-align:top; margin-left:80px">
+                        <input type="radio" name="D20" id="D20CU" value="Noresidents" style="vertical-align:top; margin-left:100px">
+                        <textarea rows="1" id="D20textarea" style="vertical-align:top; margin-left:55px"></textarea>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="inputD21" class="col-lg-6">Residents have enough food throughout the year.</label>
+                      <div style="margin-left:30px">
+                        <input type="radio" name="D21" id="D21CT" value="Allresidents" style="vertical-align:top; margin-left:75px">
+                        <input type="radio" name="D21" id="D21PT" value="Someresidents" style="vertical-align:top; margin-left:80px">
+                        <input type="radio" name="D21" id="D21CU" value="Noresidents" style="vertical-align:top; margin-left:100px">
+                        <textarea rows="1" id="D21textarea" style="vertical-align:top; margin-left:55px"></textarea>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="inputD22" class="col-lg-6">Residents have adequate housing.</label>
+                      <div style="margin-left:30px">
+                        <input type="radio" name="D22" id="D22CT" value="Allresidents" style="vertical-align:top; margin-left:75px">
+                        <input type="radio" name="D22" id="D22PT" value="Someresidents" style="vertical-align:top; margin-left:80px">
+                        <input type="radio" name="D22" id="D22CU" value="Noresidents" style="vertical-align:top; margin-left:100px">
+                        <textarea rows="1" id="D22textarea" style="vertical-align:top; margin-left:55px"></textarea>
+                      </div>
+                    </div>
+					<div class="form-group">
+                      <label for="inputD23" class="col-lg-6">Residents have access to essential health care.</label>
+                      <div style="margin-left:30px">
+                        <input type="radio" name="D23" id="D23CT" value="Allresidents" style="vertical-align:top; margin-left:75px">
+                        <input type="radio" name="D23" id="D23PT" value="Someresidents" style="vertical-align:top; margin-left:80px">
+                        <input type="radio" name="D23" id="D23CU" value="Noresidents" style="vertical-align:top; margin-left:100px">
+                        <textarea rows="1" id="D23textarea" style="vertical-align:top; margin-left:55px"></textarea>
+                      </div>
+                    </div>
+                    <div class="form-group" style="display:table;margin:auto;">
+                      <label>Number of Section D benchmarks rated “All Residents”:</label>
+                      <label id="inputC" style="margin-left:10px">0<label>
+                    </div>
+                  </fieldset>
+                  <br />
                   <fieldset>
                     <div class="form-group" style="text-align:center">
                       <div class="col-lg-9 col-lg-offset-2">
