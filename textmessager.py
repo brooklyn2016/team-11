@@ -7,17 +7,31 @@ app = Flask(__name__)
 app.config.from_object(__name__)
 
 
+
 @app.route('/sms', methods=['POST'])
 def sms():
 
     maturity = int(request.values.get('Body', None))
-    maturity += session.get('maturity', 0)
-    session['maturity'] = maturity
-    
     count = session.get('count', 0)
+
+
     count += 1
+    
+    if count > 2:
+        if maturity == 0:
+            count = session.get('count', 0) - 2;
+            maturity = - session.get('maturity', 0)
+        total = maturity
+    else:
+        total = 0
+
+    total += session.get('total', 0)
+    
+    
     session['count'] = count
-        
+    session['maturity'] = maturity
+    session['total'] = total
+    
 
     questions = {1: "Ready to begin Community Maturity Tool. 3 indicates most mature, 2 indicates partially mature, 1 indicates not mature.",
                  2: "Traffickers, whether from the village or from outside the village, cannot operate any more.",
@@ -40,8 +54,8 @@ def sms():
                  19: "Residents have economic stability.(facilitator questions: how many families have enough steady income to allow them to withstand unexpected financial demands (such as a family medical emergency) while continuing to eat properly, be housed and attend school? How many families have income generating projects? ",
                  20: "Children in this community attend school.",
                  21: "Residents can obtain loans on fair terms.",
-                 22: "esidents have enough food throughout the year.",
-                 23
+                 22: "Residents have enough food throughout the year.",
+                 23: "Residents have adequate housing.",
                  24:"Residents have access to essential health care. ",
                  25:"Survivors of slavery receive appropriate government compensation according to law.",
                  26:"Child survivors of slavery are attending school.",
@@ -66,7 +80,6 @@ def sms():
                  45:"The group is effective at reducing slavery in the community. ",
                  46:"The group has built strong links with other anti-slavery community groups."
                  }
-
         
     resp = twiml.Response()
     resp.message(questions[count])
