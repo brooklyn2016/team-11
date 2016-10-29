@@ -659,6 +659,51 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $b12textarea = $_POST["B12textarea"];
   $b_count = $_POST["inputB"];
   
+  
+  
+  
+  
+  
+  
+  
+  
+  $f30 = $_POST["F30"];
+  $f30textarea = $_POST["F30textarea"];
+  $f31 = $_POST["F31"];
+  $f31textarea = $_POST["F31textarea"];
+  $f32 = $_POST["F32"];
+  $f32textarea = $_POST["F32textarea"];
+  $f33 = $_POST["F33"];
+  $f33textarea = $_POST["F33textarea"];
+  $f34 = $_POST["F34"];
+  $f34textarea = $_POST["F34textarea"];
+  $f35 = $_POST["F35"];
+  $f35textarea = $_POST["F35textarea"];
+  $f36 = $_POST["F36"];
+  $f36textarea = $_POST["F36textarea"];
+  $f37 = $_POST["F37"];
+  $f37textarea = $_POST["F37textarea"];
+  $f38 = $_POST["F38"];
+  $f38textarea = $_POST["F38textarea"];
+  $f_count = $_POST["inputF"];
+  
+ 
+  $g39 = $_POST["G39"];
+  $g39textarea = $_POST["G39textarea"];
+  $g40 = $_POST["G40"];
+  $g40textarea = $_POST["G40textarea"];
+  $g41 = $_POST["G41"];
+  $g41textarea = $_POST["G41textarea"];
+  $g42 = $_POST["G42"];
+  $g42textarea = $_POST["G42textarea"];
+  $g43 = $_POST["G43"];
+  $g43textarea = $_POST["G43textarea"];
+  $g44 = $_POST["G44"];
+  $g44textarea = $_POST["G44textarea"];
+  $g45 = $_POST["G45"];
+  $g45textarea = $_POST["G45textarea"];
+  $g_count = $_POST["inputG"];
+  
   $dataInput = json_encode(array("Organization"=>$organization,"Settlement"=>$settlement, 
   "District"=>$district,"DateCompleted"=>$datecompleted ,
   "EstimatedPopulation"=>$estimated_population,
@@ -666,10 +711,50 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   "Answer2"=>$a2,"Answer2Comments"=>$a2textarea,
   "Answer3"=>$a3,"Answer3Comments"=>$a3textarea,
   "Answer4"=>$a4,"Answer4Comments"=>$a4textarea,
-  "Answer5"=>$a5,"Answer5Comments"=>$a5textarea));
+  "Answer5"=>$a5,"Answer5Comments"=>$a5textarea,
+  "Answer6"=>$a1,"Answer6Comments"=>$a1textarea,
+  "Answer7"=>$a2,"Answer7Comments"=>$a2textarea,
+  "Answer8"=>$a3,"Answer8Comments"=>$a3textarea,
+  "Answer9"=>$a4,"Answer9Comments"=>$a4textarea,
+  "Answer10"=>$a5,"Answer10Comments"=>$a5textarea,
+  "Answer11"=>$a1,"Answer11Comments"=>$a1textarea,
+  "Answer12"=>$a2,"Answer12Comments"=>$a2textarea,
+  "Answer13"=>$a3,"Answer13Comments"=>$a3textarea,
+  "Answer14"=>$a4,"Answer14Comments"=>$a4textarea,
+  "Answer15"=>$a5,"Answer15Comments"=>$a5textarea,
+  "Answer16"=>$a1,"Answer16Comments"=>$a1textarea,
+  "Answer17"=>$a2,"Answer17Comments"=>$a2textarea,
+  "Answer18"=>$a3,"Answer18Comments"=>$a3textarea,
+  "Answer19"=>$a4,"Answer19Comments"=>$a4textarea,
+  "Answer20"=>$a5,"Answer20Comments"=>$a5textarea,
+  "Answer21"=>$a1,"Answer21Comments"=>$a1textarea,
+  "Answer22"=>$a2,"Answer22Comments"=>$a2textarea,
+  "Answer23"=>$a3,"Answer23Comments"=>$a3textarea,
+  "Answer24"=>$a4,"Answer24Comments"=>$a4textarea,
+  "Answer25"=>$a5,"Answer25Comments"=>$a5textarea,
+  "Answer26"=>$a1,"Answer26Comments"=>$a1textarea,
+  "Answer27"=>$a2,"Answer27Comments"=>$a2textarea,
+  "Answer28"=>$a3,"Answer28Comments"=>$a3textarea,
+  "Answer29"=>$a4,"Answer29Comments"=>$a4textarea,
+  "Answer30"=>$a5,"Answer30Comments"=>$a5textarea,
+  "Answer31"=>$a1,"Answer31Comments"=>$a1textarea,
+  "Answer32"=>$a2,"Answer32Comments"=>$a2textarea,
+  "Answer33"=>$a3,"Answer33Comments"=>$a3textarea,
+  "Answer34"=>$a4,"Answer34Comments"=>$a4textarea,
+  "Answer35"=>$a5,"Answer35Comments"=>$a5textarea,
+  "Answer36"=>$a1,"Answer36Comments"=>$a1textarea,
+  "Answer37"=>$a2,"Answer37Comments"=>$a2textarea,
+  "Answer38"=>$a3,"Answer38Comments"=>$a3textarea,
+  "Answer39"=>$a4,"Answer39Comments"=>$a4textarea,
+  "Answer40"=>$a5,"Answer40Comments"=>$a5textarea,
+  "Answer41"=>$a1,"Answer41Comments"=>$a1textarea,
+  "Answer42"=>$a2,"Answer42Comments"=>$a2textarea,
+  "Answer43"=>$a3,"Answer43Comments"=>$a3textarea,
+  "Answer44"=>$a4,"Answer44Comments"=>$a4textarea,
+  "Answer45"=>$a5,"Answer45Comments"=>$a5textarea,));
 
 
-  $file = fopen("OutputFile.txt", "w") or die("Unable to open"); 
+  $file = fopen("OutputFile.txt", "a") or die("Unable to open"); 
   fwrite($file, $dataInput);
   fclose($file);
   /*echo $organization;
