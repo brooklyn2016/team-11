@@ -64,6 +64,10 @@ echo "Village/Settlement: $dataOutput['settlement']";
 echo "District: $dataOutput['district']";
 echo "Date this assessment was completed: $dataOutput['datecompleted']";
 echo "Estimated population: $dataOutput['estimated_population']";
+echo "Total Score: $dataOutput['total']";
+echo "Mature Rating Scale: $dataOutput['mature']";
+echo "Reasons Why It Is Mature Or Not: $dataOutput['reasons']";
+echo "ActionPlan: $dataOutput['plan']";
 echo "Traffickers, whether from the village or from outside the village, cannot operate any more: $dataOutput['A1']";
 echo "Question 1 comment: $dataOutput['A1textarea']";
 
