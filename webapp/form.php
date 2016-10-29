@@ -641,8 +641,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $a5 = $_POST["A5"];
   $a5textarea = $_POST["A5textarea"];
   $a_count = $_POST["inputA"];
+  
+  $dataInput = json_encode(array("Organization"=>$organization,"Settlement"=>$settlement, 
+  "District"=>$district,"DateCompleted"=>$datecompleted ,
+  "EstimatedPopulation"=>$estimated_population,
+  "Answer1"=>$a1,"Answer1Comments"=>$a1textarea,
+  "Answer2"=>$a2,"Answer2Comments"=>$a2textarea,
+  "Answer3"=>$a3,"Answer3Comments"=>$a3textarea,
+  "Answer4"=>$a4,"Answer4Comments"=>$a4textarea,
+  "Answer5"=>$a5,"Answer5Comments"=>$a5textarea));
 
-  echo $organization;
+
+  $file = fopen("OutputFile.txt", "w") or die("Unable to open"); 
+  fwrite($file, $dataInput);
+  fclose($file);
+  /*echo $organization;
   echo $settlement;
   echo $district;
   echo $datecompleted;
@@ -657,6 +670,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   echo $a4textarea;
   echo $a5;
   echo $a5textarea;
-  echo $a_count;
+  echo $a_count;*/
 }
 ?>
