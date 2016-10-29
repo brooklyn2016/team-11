@@ -24,7 +24,10 @@
       <div class="navbar-collapse collapse" id="navbar-main">
         <ul class="nav navbar-nav">
           <li>
-            <a href="#">Form</a>
+            <a href="../form.php">Form</a>
+          </li>
+          <li>
+            <a href="../data.php">Data</a>
           </li>
         </ul>
 
@@ -162,7 +165,7 @@
                           <input type="radio" name="B6" id="B6CT" value="all residents" style="vertical-align:top; margin-left:75px">
                           <input type="radio" name="B6" id="B6PT" value="some residents" style="vertical-align:top; margin-left:80px">
                           <input type="radio" name="B6" id="B6CU" value="no residents" style="vertical-align:top; margin-left:100px">
-                          <textarea rows="1" id="B6textarea" style="vertical-align:top; margin-left:55px"></textarea>
+                          <textarea rows="1" id="B6textarea" name="B6textarea" style="vertical-align:top; margin-left:55px"></textarea>
                         </div>
                       </div>
                       <div class="form-group">
@@ -171,7 +174,7 @@
                           <input type="radio" name="B7" id="B7CT" value="all residents" style="vertical-align:top; margin-left:75px">
                           <input type="radio" name="B7" id="B7PT" value="some residents" style="vertical-align:top; margin-left:80px">
                           <input type="radio" name="B7" id="B7CU" value="no residents" style="vertical-align:top; margin-left:100px">
-                          <textarea rows="1" id="B7textarea" style="vertical-align:top; margin-left:55px"></textarea>
+                          <textarea rows="1" id="B7textarea" name="B7textarea" style="vertical-align:top; margin-left:55px"></textarea>
                         </div>
                       </div>
                       <div class="form-group">
@@ -180,7 +183,7 @@
                           <input type="radio" name="B8" id="B8CT" value="all residents" style="vertical-align:top; margin-left:75px">
                           <input type="radio" name="B8" id="B8PT" value="some residents" style="vertical-align:top; margin-left:80px">
                           <input type="radio" name="B8" id="B8CU" value="no residents" style="vertical-align:top; margin-left:100px">
-                          <textarea rows="1" id="B8textarea" style="vertical-align:top; margin-left:55px"></textarea>
+                          <textarea rows="1" id="B8textarea" name="B8textarea" style="vertical-align:top; margin-left:55px"></textarea>
                         </div>
                       </div>
                       <div class="form-group">
@@ -189,7 +192,7 @@
                           <input type="radio" name="B9" id="B9CT" value="all residents" style="vertical-align:top; margin-left:75px">
                           <input type="radio" name="B9" id="B9PT" value="some residents" style="vertical-align:top; margin-left:80px">
                           <input type="radio" name="B9" id="B9CU" value="no residents" style="vertical-align:top; margin-left:100px">
-                          <textarea rows="1" id="B9textarea" style="vertical-align:top; margin-left:55px"></textarea>
+                          <textarea rows="1" id="B9textarea" name="B9textarea" style="vertical-align:top; margin-left:55px"></textarea>
                         </div>
                       </div>
                       <div class="form-group">
@@ -198,7 +201,7 @@
                           <input type="radio" name="B10" id="B10CT" value="all residents" style="vertical-align:top; margin-left:75px">
                           <input type="radio" name="B10" id="B10PT" value="some residents" style="vertical-align:top; margin-left:80px">
                           <input type="radio" name="B10" id="B10CU" value="no residents" style="vertical-align:top; margin-left:100px">
-                          <textarea rows="1" id="B10textarea" style="vertical-align:top; margin-left:55px"></textarea>
+                          <textarea rows="1" id="B10textarea" name="B10textarea" style="vertical-align:top; margin-left:55px"></textarea>
                         </div>
                       </div>
                       <div class="form-group">
@@ -207,7 +210,7 @@
                           <input type="radio" name="B11" id="B11CT" value="all residents" style="vertical-align:top; margin-left:75px">
                           <input type="radio" name="B11" id="B11PT" value="some residents" style="vertical-align:top; margin-left:80px">
                           <input type="radio" name="B11" id="B11CU" value="no residents" style="vertical-align:top; margin-left:100px">
-                          <textarea rows="1" id="B11textarea" style="vertical-align:top; margin-left:55px"></textarea>
+                          <textarea rows="1" id="B11textarea" name="B11textarea" style="vertical-align:top; margin-left:55px"></textarea>
                         </div>
                       </div>
                       <div class="form-group">
@@ -216,7 +219,7 @@
                           <input type="radio" name="B12" id="B12CT" value="all residents" style="vertical-align:top; margin-left:75px">
                           <input type="radio" name="B12" id="B12PT" value="some residents" style="vertical-align:top; margin-left:80px">
                           <input type="radio" name="B12" id="B12CU" value="no residents" style="vertical-align:top; margin-left:100px">
-                          <textarea rows="1" id="B12textarea" style="vertical-align:top; margin-left:55px"></textarea>
+                          <textarea rows="1" id="B12textarea" name="B12textarea" style="vertical-align:top; margin-left:55px"></textarea>
                         </div>
                       </div>
                       <div class="form-group" style="display:table;margin:auto;">
@@ -240,7 +243,7 @@
                             <input type="radio" name="C13" id="C13CT" value="all residents" style="vertical-align:top; margin-left:75px">
                             <input type="radio" name="C13" id="C13PT" value="some residents" style="vertical-align:top; margin-left:80px">
                             <input type="radio" name="C13" id="C13CU" value="no residents" style="vertical-align:top; margin-left:100px">
-                            <textarea rows="1" id="C13textarea" style="vertical-align:top; margin-left:55px"></textarea>
+                            <textarea rows="1" id="C13textarea" name="C13textarea" style="vertical-align:top; margin-left:55px"></textarea>
                           </div>
                         </div>
                         <div class="form-group">
@@ -249,7 +252,7 @@
                             <input type="radio" name="C14" id="C14CT" value="all residents" style="vertical-align:top; margin-left:75px">
                             <input type="radio" name="C14" id="C14PT" value="some residents" style="vertical-align:top; margin-left:80px">
                             <input type="radio" name="C14" id="C14CU" value="no residents" style="vertical-align:top; margin-left:100px">
-                            <textarea rows="1" id="C14textarea" style="vertical-align:top; margin-left:55px"></textarea>
+                            <textarea rows="1" id="C14textarea" name="C14textarea" style="vertical-align:top; margin-left:55px"></textarea>
                           </div>
                         </div>
                         <div class="form-group">
@@ -258,7 +261,7 @@
                             <input type="radio" name="C15" id="C15CT" value="all residents" style="vertical-align:top; margin-left:75px">
                             <input type="radio" name="C15" id="C15PT" value="some residents" style="vertical-align:top; margin-left:80px">
                             <input type="radio" name="C15" id="C15CU" value="no residents" style="vertical-align:top; margin-left:100px">
-                            <textarea rows="1" id="C15textarea" style="vertical-align:top; margin-left:55px"></textarea>
+                            <textarea rows="1" id="C15textarea" name="C15textarea" style="vertical-align:top; margin-left:55px"></textarea>
                           </div>
                         </div>
                         <div class="form-group">
@@ -267,7 +270,7 @@
                             <input type="radio" name="C16" id="C16CT" value="all residents" style="vertical-align:top; margin-left:75px">
                             <input type="radio" name="C16" id="C16PT" value="some residents" style="vertical-align:top; margin-left:80px">
                             <input type="radio" name="C16" id="C16CU" value="no residents" style="vertical-align:top; margin-left:100px">
-                            <textarea rows="1" id="C16textarea" style="vertical-align:top; margin-left:55px"></textarea>
+                            <textarea rows="1" id="C16textarea" name="C16textarea" style="vertical-align:top; margin-left:55px"></textarea>
                           </div>
                         </div>
                         <div class="form-group">
@@ -276,7 +279,7 @@
                             <input type="radio" name="C17" id="C17CT" value="all residents" style="vertical-align:top; margin-left:75px">
                             <input type="radio" name="C17" id="C17PT" value="some residents" style="vertical-align:top; margin-left:80px">
                             <input type="radio" name="C17" id="C17CU" value="no residents" style="vertical-align:top; margin-left:100px">
-                            <textarea rows="1" id="C17textarea" style="vertical-align:top; margin-left:55px"></textarea>
+                            <textarea rows="1" id="C17textarea" name="C17textarea" style="vertical-align:top; margin-left:55px"></textarea>
                           </div>
                         </div>
                         <div class="form-group" style="display:table;margin:auto;">
@@ -300,7 +303,7 @@
                               <input type="radio" name="D18" id="D18CT" value="all residents" style="vertical-align:top; margin-left:75px">
                               <input type="radio" name="D18" id="D18PT" value="some residents" style="vertical-align:top; margin-left:80px">
                               <input type="radio" name="D18" id="D18CU" value="no residents" style="vertical-align:top; margin-left:100px">
-                              <textarea rows="1" id="D18textarea" style="vertical-align:top; margin-left:55px"></textarea>
+                              <textarea rows="1" id="D18textarea" name="D18textarea" style="vertical-align:top; margin-left:55px"></textarea>
                             </div>
                           </div>
                           <div class="form-group">
@@ -309,7 +312,7 @@
                               <input type="radio" name="D19" id="D19CT" value="all residents" style="vertical-align:top; margin-left:75px">
                               <input type="radio" name="D19" id="D19PT" value="some residents" style="vertical-align:top; margin-left:80px">
                               <input type="radio" name="D19" id="D19CU" value="no residents" style="vertical-align:top; margin-left:100px">
-                              <textarea rows="1" id="D19textarea" style="vertical-align:top; margin-left:55px"></textarea>
+                              <textarea rows="1" id="D19textarea" name="D19textarea" style="vertical-align:top; margin-left:55px"></textarea>
                             </div>
                           </div>
                           <div class="form-group">
@@ -318,7 +321,7 @@
                               <input type="radio" name="D20" id="D20CT" value="all residents" style="vertical-align:top; margin-left:75px">
                               <input type="radio" name="D20" id="D20PT" value="some residents" style="vertical-align:top; margin-left:80px">
                               <input type="radio" name="D20" id="D20CU" value="no residents" style="vertical-align:top; margin-left:100px">
-                              <textarea rows="1" id="D20textarea" style="vertical-align:top; margin-left:55px"></textarea>
+                              <textarea rows="1" id="D20textarea" name="D20textarea" style="vertical-align:top; margin-left:55px"></textarea>
                             </div>
                           </div>
                           <div class="form-group">
@@ -327,7 +330,7 @@
                               <input type="radio" name="D21" id="D21CT" value="all residents" style="vertical-align:top; margin-left:75px">
                               <input type="radio" name="D21" id="D21PT" value="some residents" style="vertical-align:top; margin-left:80px">
                               <input type="radio" name="D21" id="D21CU" value="no residents" style="vertical-align:top; margin-left:100px">
-                              <textarea rows="1" id="D21textarea" style="vertical-align:top; margin-left:55px"></textarea>
+                              <textarea rows="1" id="D21textarea" name="D21textarea" style="vertical-align:top; margin-left:55px"></textarea>
                             </div>
                           </div>
                           <div class="form-group">
@@ -336,7 +339,7 @@
                               <input type="radio" name="D22" id="D22CT" value="all residents" style="vertical-align:top; margin-left:75px">
                               <input type="radio" name="D22" id="D22PT" value="some residents" style="vertical-align:top; margin-left:80px">
                               <input type="radio" name="D22" id="D22CU" value="no residents" style="vertical-align:top; margin-left:100px">
-                              <textarea rows="1" id="D22textarea" style="vertical-align:top; margin-left:55px"></textarea>
+                              <textarea rows="1" id="D22textarea" name="D22textarea" style="vertical-align:top; margin-left:55px"></textarea>
                             </div>
                           </div>
                           <div class="form-group">
@@ -345,7 +348,7 @@
                               <input type="radio" name="D23" id="D23CT" value="all residents" style="vertical-align:top; margin-left:75px">
                               <input type="radio" name="D23" id="D23PT" value="some residents" style="vertical-align:top; margin-left:80px">
                               <input type="radio" name="D23" id="D23CU" value="no residents" style="vertical-align:top; margin-left:100px">
-                              <textarea rows="1" id="D23textarea" style="vertical-align:top; margin-left:55px"></textarea>
+                              <textarea rows="1" id="D23textarea" name="D23textarea" style="vertical-align:top; margin-left:55px"></textarea>
                             </div>
                           </div>
                           <div class="form-group" style="display:table;margin:auto;">
@@ -358,10 +361,10 @@
                     <legend>E. Reintegration of survivors: </legend>
                     <div class="form-group">
                       <label class="col-lg-6"></label>
-                      <label style="padding-right: 15px; margin-left:30px">All Survivors</label>
-                      <label style="padding-right: 15px">Some Survivors</label>
-                      <label style="padding-right: 15px">No Survivors</label>
-                      <label>Comments</label>
+                      <label style="padding-right: 15px; margin-left:45px">All Residents</label>
+                        <label style="padding-right: 15px">Some Residents</label>
+                        <label style="padding-right: 15px; margin-left:10px">No Residents</label>
+                        <label style="margin-left:10px">Comments</label>
                     </div>
                     <div class="form-group">
                       <label for="inputE24" class="col-lg-6" style="vertical-align:middle">Survivors of slavery receive appropriate government compensation according to
@@ -370,7 +373,7 @@ law.</label>
                         <input type="radio" name="E24" id="E24CT" value="completely true" style="vertical-align:top; margin-left:75px">
                         <input type="radio" name="E24" id="E24PT" value="partially true" style="vertical-align:top; margin-left:80px">
                         <input type="radio" name="E24" id="E24CU" value="completely untrue" style="vertical-align:top; margin-left:100px">
-                        <textarea rows="1" id="E24textarea" style="vertical-align:top; margin-left:55px"></textarea>
+                        <textarea rows="1" id="E24textarea" name="E24textarea" style="vertical-align:top; margin-left:55px"></textarea>
                       </div>
                     </div>
                     <div class="form-group">
@@ -379,7 +382,7 @@ law.</label>
                         <input type="radio" name="E25" id="E25CT" value="completely true" style="vertical-align:top; margin-left:75px">
                         <input type="radio" name="E25" id="E25PT" value="partially true" style="vertical-align:top; margin-left:80px">
                         <input type="radio" name="E25" id="E25CU" value="completely untrue" style="vertical-align:top; margin-left:100px">
-                        <textarea rows="1" id="E25textarea" style="vertical-align:top; margin-left:55px"></textarea>
+                        <textarea rows="1" id="E25textarea" name="E25textarea" style="vertical-align:top; margin-left:55px"></textarea>
                       </div>
                     </div>
                     <div class="form-group">
@@ -388,7 +391,7 @@ law.</label>
                         <input type="radio" name="E26" id="E26CT" value="completely true" style="vertical-align:top; margin-left:75px">
                         <input type="radio" name="E26" id="E26PT" value="partially true" style="vertical-align:top; margin-left:80px">
                         <input type="radio" name="E26" id="E26CU" value="completely untrue" style="vertical-align:top; margin-left:100px">
-                        <textarea rows="1" id="E26textarea" style="vertical-align:top; margin-left:55px"></textarea>
+                        <textarea rows="1" id="E26textarea" name="E26textarea" style="vertical-align:top; margin-left:55px"></textarea>
                       </div>
                     </div>
                     <div class="form-group">
@@ -397,7 +400,7 @@ law.</label>
                         <input type="radio" name="E27" id="E27CT" value="completely true" style="vertical-align:top; margin-left:75px">
                         <input type="radio" name="E27" id="E27PT" value="partially true" style="vertical-align:top; margin-left:80px">
                         <input type="radio" name="E27" id="E27CU" value="completely untrue" style="vertical-align:top; margin-left:100px">
-                        <textarea rows="1" id="E27textarea" style="vertical-align:top; margin-left:55px"></textarea>
+                        <textarea rows="1" id="E27textarea" name="E27textarea" style="vertical-align:top; margin-left:55px"></textarea>
                       </div>
                     </div>
                     <div class="form-group">
@@ -406,7 +409,7 @@ law.</label>
                         <input type="radio" name="E28" id="E28CT" value="completely true" style="vertical-align:top; margin-left:75px">
                         <input type="radio" name="E28" id="E28PT" value="partially true" style="vertical-align:top; margin-left:80px">
                         <input type="radio" name="E28" id="E28CU" value="completely untrue" style="vertical-align:top; margin-left:100px">
-                        <textarea rows="1" id="E28textarea" style="vertical-align:top; margin-left:55px"></textarea>
+                        <textarea rows="1" id="E28textarea" name="E28textarea" style="vertical-align:top; margin-left:55px"></textarea>
                       </div>
                     </div>
                     <div class="form-group">
@@ -415,7 +418,7 @@ law.</label>
                         <input type="radio" name="E29" id="E29CT" value="completely true" style="vertical-align:top; margin-left:75px">
                         <input type="radio" name="E29" id="E29PT" value="partially true" style="vertical-align:top; margin-left:80px">
                         <input type="radio" name="E29" id="E29CU" value="completely untrue" style="vertical-align:top; margin-left:100px">
-                        <textarea rows="1" id="E29textarea" style="vertical-align:top; margin-left:55px"></textarea>
+                        <textarea rows="1" id="E29textarea" name="E29textarea" style="vertical-align:top; margin-left:55px"></textarea>
                       </div>
                     </div>
                     <div class="form-group" style="display:table;margin:auto;">
@@ -439,7 +442,7 @@ law.</label>
                         <input type="radio" name="F30" id="F30CT" value="completely true" style="vertical-align:top; margin-left:75px">
                         <input type="radio" name="F30" id="F30PT" value="partially true" style="vertical-align:top; margin-left:80px">
                         <input type="radio" name="F30" id="F30CU" value="completely untrue" style="vertical-align:top; margin-left:100px">
-                        <textarea rows="1" id="F30textarea" style="vertical-align:top; margin-left:55px"></textarea>
+                        <textarea rows="1" id="F30textarea" name="F30textarea" style="vertical-align:top; margin-left:55px"></textarea>
                       </div>
                     </div>
                     <div class="form-group">
@@ -448,7 +451,7 @@ law.</label>
                         <input type="radio" name="F31" id="F31CT" value="completely true" style="vertical-align:top; margin-left:75px">
                         <input type="radio" name="F31" id="F31PT" value="partially true" style="vertical-align:top; margin-left:80px">
                         <input type="radio" name="F31" id="F31CU" value="completely untrue" style="vertical-align:top; margin-left:100px">
-                        <textarea rows="1" id="F31textarea" style="vertical-align:top; margin-left:55px"></textarea>
+                        <textarea rows="1" id="F31textarea" name="F31textarea" style="vertical-align:top; margin-left:55px"></textarea>
                       </div>
                     </div>
                     <div class="form-group">
@@ -457,7 +460,7 @@ law.</label>
                         <input type="radio" name="F32" id="F32CT" value="completely true" style="vertical-align:top; margin-left:75px">
                         <input type="radio" name="F32" id="F32PT" value="partially true" style="vertical-align:top; margin-left:80px">
                         <input type="radio" name="F32" id="F32CU" value="completely untrue" style="vertical-align:top; margin-left:100px">
-                        <textarea rows="1" id="F32textarea" style="vertical-align:top; margin-left:55px"></textarea>
+                        <textarea rows="1" id="F32textarea" name="F32textarea" style="vertical-align:top; margin-left:55px"></textarea>
                       </div>
                     </div>
                     <div class="form-group">
@@ -466,7 +469,7 @@ law.</label>
                         <input type="radio" name="F33" id="F33CT" value="completely true" style="vertical-align:top; margin-left:75px">
                         <input type="radio" name="F33" id="F33PT" value="partially true" style="vertical-align:top; margin-left:80px">
                         <input type="radio" name="F33" id="F33CU" value="completely untrue" style="vertical-align:top; margin-left:100px">
-                        <textarea rows="1" id="F33textarea" style="vertical-align:top; margin-left:55px"></textarea>
+                        <textarea rows="1" id="F33textarea" name="F33textarea" style="vertical-align:top; margin-left:55px"></textarea>
                       </div>
                     </div>
                     <div class="form-group">
@@ -475,7 +478,7 @@ law.</label>
                         <input type="radio" name="F34" id="F34CT" value="completely true" style="vertical-align:top; margin-left:75px">
                         <input type="radio" name="F34" id="F34PT" value="partially true" style="vertical-align:top; margin-left:80px">
                         <input type="radio" name="F34" id="F34CU" value="completely untrue" style="vertical-align:top; margin-left:100px">
-                        <textarea rows="1" id="F34textarea" style="vertical-align:top; margin-left:55px"></textarea>
+                        <textarea rows="1" id="F34textarea" name="F34textarea" style="vertical-align:top; margin-left:55px"></textarea>
                       </div>
                     </div>
                     <div class="form-group">
@@ -484,7 +487,7 @@ law.</label>
                         <input type="radio" name="F35" id="F35CT" value="completely true" style="vertical-align:top; margin-left:75px">
                         <input type="radio" name="F35" id="F35PT" value="partially true" style="vertical-align:top; margin-left:80px">
                         <input type="radio" name="F35" id="F35CU" value="completely untrue" style="vertical-align:top; margin-left:100px">
-                        <textarea rows="1" id="F35textarea" style="vertical-align:top; margin-left:55px"></textarea>
+                        <textarea rows="1" id="F35textarea" name="F35textarea" style="vertical-align:top; margin-left:55px"></textarea>
                       </div>
                     </div>
                     <div class="form-group">
@@ -493,7 +496,7 @@ law.</label>
                         <input type="radio" name="F36" id="F36CT" value="completely true" style="vertical-align:top; margin-left:75px">
                         <input type="radio" name="F36" id="F36PT" value="partially true" style="vertical-align:top; margin-left:80px">
                         <input type="radio" name="F36" id="F36CU" value="completely untrue" style="vertical-align:top; margin-left:100px">
-                        <textarea rows="1" id="F36textarea" style="vertical-align:top; margin-left:55px"></textarea>
+                        <textarea rows="1" id="F36textarea" name="F36textarea" style="vertical-align:top; margin-left:55px"></textarea>
                       </div>
                     </div>
                     <div class="form-group">
@@ -503,7 +506,7 @@ that those connected with slaveholders and trafficking may not accept the group)
                         <input type="radio" name="F37" id="F37CT" value="completely true" style="vertical-align:top; margin-left:75px">
                         <input type="radio" name="F37" id="F37PT" value="partially true" style="vertical-align:top; margin-left:80px">
                         <input type="radio" name="F37" id="F37CU" value="completely untrue" style="vertical-align:top; margin-left:100px">
-                        <textarea rows="1" id="F37textarea" style="vertical-align:top; margin-left:55px"></textarea>
+                        <textarea rows="1" id="F37textarea" name="F37textarea" style="vertical-align:top; margin-left:55px"></textarea>
                       </div>
                     </div>
                     <div class="form-group">
@@ -512,7 +515,7 @@ that those connected with slaveholders and trafficking may not accept the group)
                         <input type="radio" name="F38" id="F38CT" value="completely true" style="vertical-align:top; margin-left:75px">
                         <input type="radio" name="F38" id="F38PT" value="partially true" style="vertical-align:top; margin-left:80px">
                         <input type="radio" name="F38" id="F38CU" value="completely untrue" style="vertical-align:top; margin-left:100px">
-                        <textarea rows="1" id="F38textarea" style="vertical-align:top; margin-left:55px"></textarea>
+                        <textarea rows="1" id="F38textarea" name="F38textarea" style="vertical-align:top; margin-left:55px"></textarea>
                       </div>
                     </div>
                     <div class="form-group" style="display:table;margin:auto;">
@@ -536,7 +539,7 @@ that those connected with slaveholders and trafficking may not accept the group)
                         <input type="radio" name="G39" id="G39CT" value="completely true" style="vertical-align:top; margin-left:75px">
                         <input type="radio" name="G39" id="G39PT" value="partially true" style="vertical-align:top; margin-left:80px">
                         <input type="radio" name="G39" id="G39CU" value="completely untrue" style="vertical-align:top; margin-left:100px">
-                        <textarea rows="1" id="G39textarea" style="vertical-align:top; margin-left:55px"></textarea>
+                        <textarea rows="1" id="G39textarea" name="G39textarea" style="vertical-align:top; margin-left:55px"></textarea>
                       </div>
                     </div>
                     <div class="form-group">
@@ -545,7 +548,7 @@ that those connected with slaveholders and trafficking may not accept the group)
                         <input type="radio" name="G40" id="G40CT" value="completely true" style="vertical-align:top; margin-left:75px">
                         <input type="radio" name="G40" id="G40PT" value="partially true" style="vertical-align:top; margin-left:80px">
                         <input type="radio" name="G40" id="G40CU" value="completely untrue" style="vertical-align:top; margin-left:100px">
-                        <textarea rows="1" id="G40textarea" style="vertical-align:top; margin-left:55px"></textarea>
+                        <textarea rows="1" id="G40textarea" name="G40textarea" style="vertical-align:top; margin-left:55px"></textarea>
                       </div>
                     </div>
                     <div class="form-group">
@@ -554,7 +557,7 @@ that those connected with slaveholders and trafficking may not accept the group)
                         <input type="radio" name="G41" id="G41CT" value="completely true" style="vertical-align:top; margin-left:75px">
                         <input type="radio" name="G41" id="G41PT" value="partially true" style="vertical-align:top; margin-left:80px">
                         <input type="radio" name="G41" id="G41CU" value="completely untrue" style="vertical-align:top; margin-left:100px">
-                        <textarea rows="1" id="G41textarea" style="vertical-align:top; margin-left:55px"></textarea>
+                        <textarea rows="1" id="G41textarea" name="G41textarea" style="vertical-align:top; margin-left:55px"></textarea>
                       </div>
                     </div>
                     <div class="form-group">
@@ -563,7 +566,7 @@ that those connected with slaveholders and trafficking may not accept the group)
                         <input type="radio" name="G42" id="G42CT" value="completely true" style="vertical-align:top; margin-left:75px">
                         <input type="radio" name="G42" id="G42PT" value="partially true" style="vertical-align:top; margin-left:80px">
                         <input type="radio" name="G42" id="G42CU" value="completely untrue" style="vertical-align:top; margin-left:100px">
-                        <textarea rows="1" id="G42textarea" style="vertical-align:top; margin-left:55px"></textarea>
+                        <textarea rows="1" id="G42textarea" name="G42textarea" style="vertical-align:top; margin-left:55px"></textarea>
                       </div>
                     </div>
                     <div class="form-group">
@@ -572,7 +575,7 @@ that those connected with slaveholders and trafficking may not accept the group)
                         <input type="radio" name="G43" id="G43CT" value="completely true" style="vertical-align:top; margin-left:75px">
                         <input type="radio" name="G43" id="G43PT" value="partially true" style="vertical-align:top; margin-left:80px">
                         <input type="radio" name="G43" id="G43CU" value="completely untrue" style="vertical-align:top; margin-left:100px">
-                        <textarea rows="1" id="G43textarea" style="vertical-align:top; margin-left:55px"></textarea>
+                        <textarea rows="1" id="G43textarea" name="G43textarea" style="vertical-align:top; margin-left:55px"></textarea>
                       </div>
                     </div>
                     <div class="form-group">
@@ -581,7 +584,7 @@ that those connected with slaveholders and trafficking may not accept the group)
                         <input type="radio" name="G44" id="G44CT" value="completely true" style="vertical-align:top; margin-left:75px">
                         <input type="radio" name="G44" id="G44PT" value="partially true" style="vertical-align:top; margin-left:80px">
                         <input type="radio" name="G44" id="G44CU" value="completely untrue" style="vertical-align:top; margin-left:100px">
-                        <textarea rows="1" id="G44textarea" style="vertical-align:top; margin-left:55px"></textarea>
+                        <textarea rows="1" id="G44textarea" name="G44textarea" style="vertical-align:top; margin-left:55px"></textarea>
                       </div>
                     </div>
                     <div class="form-group">
@@ -590,7 +593,7 @@ that those connected with slaveholders and trafficking may not accept the group)
                         <input type="radio" name="G45" id="G45CT" value="completely true" style="vertical-align:top; margin-left:75px">
                         <input type="radio" name="G45" id="G45PT" value="partially true" style="vertical-align:top; margin-left:80px">
                         <input type="radio" name="G45" id="G45CU" value="completely untrue" style="vertical-align:top; margin-left:100px">
-                        <textarea rows="1" id="G45textarea" style="vertical-align:top; margin-left:55px"></textarea>
+                        <textarea rows="1" id="G45textarea" name="G45textarea" style="vertical-align:top; margin-left:55px"></textarea>
                       </div>
                     </div>
                     <div class="form-group" style="display:table;margin:auto;">
@@ -598,6 +601,44 @@ that those connected with slaveholders and trafficking may not accept the group)
                       <input id="inputG" name="inputG" style="margin-left:10px; border:none; background:none;" value="0" readonly></input>
                     </div>
                   </fieldset>
+                  <br />
+                  <fieldset>
+                    <legend>Conclusion</legend>
+                    <div class="form-group" style="margin:0px">
+                      <label class="col-lg-2">Section A score:</label>
+                      <input id="inputA" style="margin-left:10px; border:none; background:none;" value="0" readonly></input>
+                    </div>
+                    <div class="form-group" style="margin:0px">
+                      <label class="col-lg-2">Section B score:</label>
+                      <input id="inputB" style="margin-left:10px; border:none; background:none;" value="0" readonly></input>
+                    </div>
+                    <div class="form-group" style="margin:0px">
+                      <label class="col-lg-2">Section C score:</label>
+                      <input id="inputC" style="margin-left:10px; border:none; background:none;" value="0" readonly></input>
+                    </div>
+                    <div class="form-group" style="margin:0px">
+                      <label class="col-lg-2">Section D score:</label>
+                      <input id="inputD" style="margin-left:10px; border:none; background:none;" value="0" readonly></input>
+                    </div>
+                    <div class="form-group" style="margin:0px">
+                      <label class="col-lg-2">Section E score:</label>
+                      <input id="inputE" style="margin-left:10px; border:none; background:none;" value="0" readonly></input>
+                    </div>
+                    <div class="form-group" style="margin:0px">
+                      <label class="col-lg-2">Section F score:</label>
+                      <input id="inputF" style="margin-left:10px; border:none; background:none;" value="0" readonly></input>
+                    </div>
+                    <div class="form-group" style="margin:0px">
+                      <label class="col-lg-2">Section G score:</label>
+                      <input id="inputG" style="margin-left:10px; border:none; background:none;" value="0" readonly></input>
+                    </div>
+                    <div class="form-group" style="margin:0px">
+                      <hr class="col-lg-2"/>
+                    </div>
+                    <div class="form-group" style="margin:0px">
+                      <label class="col-lg-2">Total:</label>
+                      <input id="total" name="total" style="margin-left:10px; border:none; background:none;" value="0" readonly></input>
+                    </div>
                   <br />
                   <fieldset>
                     <div class="form-group" style="text-align:center">
@@ -658,15 +699,43 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $b12 = $_POST["B12"];
   $b12textarea = $_POST["B12textarea"];
   $b_count = $_POST["inputB"];
+
+  $c13 = $_POST["C13"];
+  $c13textarea = $_POST["C13textarea"];
+  $c14 = $_POST["C14"];
+  $c14textarea = $_POST["C14textarea"];
+  $c15 = $_POST["C15"];
+  $c15textarea = $_POST["C15textarea"];
+  $c16 = $_POST["C16"];
+  $c16textarea = $_POST["C16textarea"];
+  $c17 = $_POST["C17"];
+  $c17textarea = $_POST["C17textarea"];
+  $c_count = $_POST["inputC"];
   
-  
-  
-  
-  
-  
-  
-  
-  
+  $d18 = $_POST["D18"];
+  $d18textarea = $_POST["D18textarea"];
+  $d19 = $_POST["D19"];
+  $d19textarea = $_POST["D19textarea"];
+  $d20 = $_POST["D20"];
+  $d20textarea = $_POST["D20textarea"];
+  $d23 = $_POST["D23"];
+  $d23textarea = $_POST["D23textarea"];
+  $d_count = $_POST["inputD"];
+
+  $e24 = $_POST["E24"];
+  $e24textarea = $_POST["E24textarea"];
+  $e25 = $_POST["E25"];
+  $e25textarea = $_POST["E25textarea"];
+  $e26 = $_POST["E26"];
+  $e26textarea = $_POST["E26textarea"];
+  $e27 = $_POST["E27"];
+  $e27textarea = $_POST["E27textarea"];
+  $e28 = $_POST["E28"];
+  $e28textarea = $_POST["E28textarea"];
+  $e29 = $_POST["E29"];
+  $e29textarea = $_POST["E29textarea"];
+  $e_count = $_POST["inputE"];
+
   $f30 = $_POST["F30"];
   $f30textarea = $_POST["F30textarea"];
   $f31 = $_POST["F31"];
@@ -687,7 +756,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $f38textarea = $_POST["F38textarea"];
   $f_count = $_POST["inputF"];
   
- 
   $g39 = $_POST["G39"];
   $g39textarea = $_POST["G39textarea"];
   $g40 = $_POST["G40"];
@@ -757,21 +825,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $file = fopen("OutputFile.txt", "a") or die("Unable to open"); 
   fwrite($file, $dataInput);
   fclose($file);
-  /*echo $organization;
-  echo $settlement;
-  echo $district;
-  echo $datecompleted;
-  echo $estimated_population;
-  echo $a1;
-  echo $a1textarea;
-  echo $a2;
-  echo $a2textarea;
-  echo $a3;
-  echo $a3textarea;
-  echo $a4;
-  echo $a4textarea;
-  echo $a5;
-  echo $a5textarea;
-  echo $a_count;*/
 }
 ?>
