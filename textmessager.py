@@ -16,7 +16,6 @@ def sms():
 
     total = session.get('total', 0)
     
-    count += 1
     
     if count > 2:
         if maturity == 0:
@@ -27,6 +26,8 @@ def sms():
             total = 0
     else:
         total = 0
+
+    count += 1
     
     
     print(maturity, " ", total)
