@@ -53,16 +53,22 @@
 
 
         var mature = $(this).closest('form').find('#mature');
+        var inputmature = $(this).closest('form').find('#input_mature');
         if (totalcount >= 0 && totalcount <= 9){
           mature.text("Starting up");
+          inputmature.val("Starting up");
         }else if (totalcount >= 10 && totalcount <= 19){
           mature.text("Developing");
+          inputmature.text("Developing");
         }else if (totalcount >= 20 && totalcount <= 29){
           mature.text("Strengthening");
+          inputmature.text("Strengthening");
         }else if (totalcount >= 30 && totalcount <= 39){
           mature.text("Well-established");
+          inputmature.text("Well-established");
         }else if (totalcount >= 40 && totalcount <= 45){
           mature.text("Discuss if Mature");
+          inputmature.text("Discuss if Mature");
         }
 
       });
@@ -730,14 +736,15 @@
                         <br/>
                         <label >Mature?</label>
                         <label id="mature" name="mature" style="border-bottom: 1px solid;">Starting up</label>
+                        <input class="hidden" id="input_mature" name="input_mature" value="Starting up"></input>
                       </div>
                       <div class="col-lg-3">
                         <label>Reasons why it is mature or not:</label>
-                        <textarea rows="4" id="Reasons" name="Reasons"></textarea>
+                        <textarea rows="4" id="reasons" name="reasons"></textarea>
                       </div>
                       <div class="col-lg-3">
                         <label>Action Plan</label>
-                        <textarea rows="4" id="Reasons" name="Reasons"></textarea>
+                        <textarea rows="4" id="plan" name="plan"></textarea>
                       </div>
                       <br />
                       <fieldset style="clear:both;">
@@ -871,6 +878,11 @@
             $g45 = $_POST["G45"];
             $g45textarea = $_POST["G45textarea"];
             $g_count = $_POST["inputG"];
+
+            $total = $_POST["total"];
+            $mature = $_POST["input_mature"];
+            $reasons = $_POST["reasons"];
+            $plan = $_POST["plan"];
 
             $dataInput = json_encode(array("Organization"=>$organization,"Settlement"=>$settlement, 
               "District"=>$district,"DateCompleted"=>$datecompleted ,
